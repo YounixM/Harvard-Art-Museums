@@ -1,0 +1,33 @@
+<div class="container login">
+
+  <div class="col-md-6 logo-section">
+    <div class="login-splash"> </div>
+  </div>
+  <div class="col-md-6 text-center login-section">
+    <!--<div class="google-logo"> </div>-->
+    <div *ngIf="afAuth.authState | async as user; else showLogin">
+      <h1>Hello {{ user.displayName }}!</h1>
+      <button (click)="logout()">Logout</button>
+    </div>
+    <ng-template #showLogin>
+      <p></p>
+      <button class="login-btn" (click)="login()">Login with Google</button>
+
+      <p></p>
+      <button class="login-btn" routerLink="/login-email">Login with Email</button>
+
+
+      <p></p>
+      <button class="login-btn" (click)="login()">Login with Facebook</button>
+
+      <br/>
+      <br/>
+
+      <p class="text-center or"> OR </p>
+      <p></p>
+      <button class="login-btn" routerLink="/sign-up"> Sign Up </button>
+    </ng-template>
+  </div>
+
+
+</div>

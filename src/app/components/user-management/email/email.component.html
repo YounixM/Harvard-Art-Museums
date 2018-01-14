@@ -1,0 +1,31 @@
+<div class="container email">
+
+  <div class="col-md-6 logo-section">
+    <div class="email-splash"> </div>
+  </div>
+  <div class="col-md-6 text-center email-section">
+
+    <div class="form-container">
+
+
+      <form class="email-form" #formData='ngForm' autocomplete="off">
+        <!--<h3> Sign Up </h3>-->
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="text" #email name="email" class="form-control" [(ngModel)]="user.email" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email" autocomplete="off" required>
+          <!--<small id="emailHelp" class="emailHelp form-text text-muted">We'll never share your email with anyone else.</small>-->
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" name="password" [(ngModel)]="user.password" class="form-control" id="exampleInputPassword1" placeholder="Password"
+            autocomplete="off" required>
+        </div>
+        <button type="button" class="email-btn" (click)="submitLoginForm(formData)" [disabled]="!formData.valid"> Login </button>
+      </form>
+      <a routerLink="/login" id="goback" class="email-btn">Go back</a>
+    </div>
+  </div>
+
+
+</div>

@@ -1,0 +1,54 @@
+$assetPath : "../../../../assets/images";
+
+
+.login-section{
+    margin-top : 100px;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
+
+.logo-section,.login-section{
+    margin-top : 25px;
+    padding: 0px;
+}
+
+.logo{
+    background: url(#{$assetPath}/HAM.png) no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    margin-bottom : 50px;
+}
+
+.google-logo{
+    background: url(#{$assetPath}/google2.0.0.jpg) no-repeat;
+    background-size: cover;
+    height: 100px;
+    width: 100%;
+    margin-bottom : 50px;
+}
+
+.login-splash{
+    background: url(#{$assetPath}/autumn-studio-394136.jpg) no-repeat center;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    margin-bottom : 50px;
+}
+
+.login-btn{
+    height: 50px;
+    background: white;
+    color: #333;
+    padding: 15px 30px;
+    border: 1px solid #333;
+    min-width: 300px;
+}
+
+.or{
+    margin: 30px 0;
+}

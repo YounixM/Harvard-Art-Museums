@@ -13,6 +13,12 @@ import { CollectionComponent } from './components/collection/collection.componen
 import { ShopComponent } from './components/shop/shop.component';
 import { PublicationComponent } from './components/publication/publication.component';
 
+// Usermanagement modules components
+import { LoginComponent } from './components/user-management/login/login.component';
+import { EmailComponent } from './components/user-management/email/email.component';
+import { SignupComponent } from './components/user-management/signup/signup.component';
+import { UserDashboardComponent } from './components/user-management/user-dashboard/user-dashboard.component';
+
 const routes: Routes = [
 
     {
@@ -54,6 +60,22 @@ const routes: Routes = [
     {
         path: 'shop',
         component: ShopComponent
+    },
+    {
+        path: 'login',
+        component: LoginComponent
+    },
+    {
+        path: 'login-email',
+        component: EmailComponent
+    },
+    {
+        path: 'sign-up',
+        component: SignupComponent
+    },
+    {
+        path: 'user-dashboard',
+        component: UserDashboardComponent
     },
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: '**', redirectTo: 'home', pathMatch: 'full' }
