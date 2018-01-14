@@ -1,0 +1,26 @@
+$assetPath : "../../../assets/images";
+
+.exhibitions{
+    margin : 50px 0;
+
+    .exhibition-data{
+        margin: 15px;
+        padding: 15px;
+        background: #f5f5f5;
+    }
+
+    .exhibition-data:hover{
+        cursor: pointer;
+    }
+}
+
+.exhibitions:nth-child(1){
+    margin-top : 0px;
+}
+
+.exhibition-img{
+    background: url(#{$assetPath}/pexels-photo-69903.jpg) no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}

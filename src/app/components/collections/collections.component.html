@@ -1,0 +1,11 @@
+<div class="collections-img">
+
+</div>
+
+<div class="row" *ngIf="collections">
+  <div class="col-md-6 image" *ngFor="let collection of collections" >
+    <img *ngIf="collection?.primaryimageurl" 
+         [src]="collection?.primaryimageurl" style="height: 500px; width: 100%; background-size : cover"
+         (click)="goToCollection(collection)">
+  </div>
+</div>

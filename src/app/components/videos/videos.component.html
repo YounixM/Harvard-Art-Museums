@@ -1,0 +1,26 @@
+<div class="harvard-art-museum-video">
+  <iframe class="videoContainer" src="https://www.youtube.com/embed/oZgpv1Z6P7A" frameborder="0" allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>
+
+  <h2 class="text-center video-title"> Harvard Art Museums : The Light Machine   </h2>
+</div>
+
+<div class="row videos" *ngIf="videos">
+  <div class="col-md-6 video" *ngFor="let video of videos">
+    <div [innerHtml]="iframe_html" class="inner-html"></div>
+
+    <h4 class="text-center video-desc">
+      {{video.description}}
+    </h4>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <div class="text-center">
+    <ul class="pagination">
+      <li (click)="goToPreviousPage()" [hidden]="loadingImages"><a> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> </a></li>
+      <li (click)="goToNextPage()" [hidden]="loadingImages"><a> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> </a></li>
+    </ul>
+  </div>
+</div>

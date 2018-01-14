@@ -1,0 +1,20 @@
+<div class="row publication" *ngIf="publicationInfo">
+  <div class="col-xs-12 primary-image">
+    <img src="{{publicationInfo.primaryimageurl}}">
+  </div>
+
+  <div class="clearfix"></div>
+  <div class="col-xs-12 publication-data">
+    <h4 class="text-center title">
+      {{publicationInfo.title}}
+    </h4>
+
+    <h4 class="text-center publication-year">
+      {{publicationInfo.publicationyear}} , {{publicationInfo.publicationplace}}
+    </h4>
+
+    <h4 class="text-center people" *ngFor="let t of publicationInfo.people">
+      {{t.role}} &nbsp; : &nbsp; <strong> {{t.name}} </strong>
+    </h4>
+  </div>
+</div>

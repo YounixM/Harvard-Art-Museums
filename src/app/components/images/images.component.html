@@ -1,0 +1,33 @@
+<div class="images-splash">
+
+</div>
+
+
+<div class="row">
+  <div class="col-md-6 image" *ngFor="let image of imagesArr">
+    <img [src]="image.baseimageurl" style="height: 100%; width: 100%; object-fit: contain" (click)="goToImageDetails(image)">
+  </div>
+
+  <div class="clearfix"></div>
+
+  <div class="col-xs-12 text-center loading" *ngIf="loadingImages">
+    <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+    <span class="sr-only">Loading...</span>
+
+    <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+    <span class="sr-only">Loading...</span>
+
+    <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+    <span class="sr-only">Loading...</span>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <div class="text-center">
+    <ul class="pagination">
+      <li (click)="goToPreviousPage()" [hidden]="loadingImages"><a> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> </a></li>
+      <li (click)="goToNextPage()" [hidden]="loadingImages"><a> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> </a></li>
+    </ul>
+  </div>
+
+</div>

@@ -1,0 +1,21 @@
+$assetPath : "../../../assets/images";
+
+.shop-img{
+    // background: url('assets/images/shop.jpg') no-repeat;
+    background: url(#{$assetPath}/shop.jpg) no-repeat;
+    height: 300px;
+}
+
+
+.shop-details{
+
+    margin-bottom: 100px;
+    h2,h3,h4{
+        margin-top : 40px;
+        line-height: 1.5em;
+    }
+
+    .address{
+        color : grey;
+    }
+}

@@ -1,0 +1,30 @@
+<div class="exhibition-img">
+
+</div>
+
+<div class="row exhibitions" *ngIf="currentExhibitions">
+  <h3 class="col-xs-12"> <strong> Current Exhibitions </strong>  </h3>
+  <div class="col-xs-12 exhibition-data" *ngFor="let exhibition of currentExhibitions" (click)="goToExhibition(exhibition)">
+    <h3> {{exhibition.title}} </h3>
+    <p> {{exhibition.begindate}} -  {{exhibition.enddate}}</p>
+  </div>
+</div>
+
+<div class="row exhibitions" *ngIf="upcomingExhibitions">
+  <h3 class="col-xs-12"> <strong> Upcoming Exhibitions </strong>  </h3>
+  <div class="col-xs-12 exhibition-data" *ngFor="let exhibition of upcomingExhibitions" (click)="goToExhibition(exhibition)">
+
+    <h3> {{exhibition.title}} </h3>
+    <p> {{exhibition.begindate}} -  {{exhibition.enddate}}</p>
+  </div>
+</div>
+
+
+<div class="row exhibitions" *ngIf="pastExhibitions">
+  <h3 class="col-xs-12"> <strong> Past Exhibitions </strong>  </h3>
+  <div class="col-xs-12 exhibition-data" *ngFor="let exhibition of pastExhibitions" (click)="goToExhibition(exhibition)">
+
+    <h3> {{exhibition.title}} </h3>
+    <p> {{exhibition.begindate}} -  {{exhibition.enddate}}</p>
+  </div>
+</div>

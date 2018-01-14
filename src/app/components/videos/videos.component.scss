@@ -1,0 +1,69 @@
+.video{
+    margin: 30px 0;
+    iframe{
+        width: 100%;
+    }
+
+    .inner-html{
+        text-align: center;
+    }
+
+    .video-desc{
+        margin: 30px 0;
+        line-height: 1.5em;
+        height: 3em;       /* height is 2x line-height, so two lines will display */
+        overflow: hidden;  /* prevents extra lines from being visible */
+        
+    }
+}
+
+.pagination{
+    margin : 50px 0;
+
+    li{
+        a{  
+            min-width: 50px;
+            text-align: center;
+            border-radius: 0;
+            color : gray;
+            font-size: 1.1em;
+            border-color: gray;
+            background: white;
+            margin-right: 5px;
+        }
+    }
+
+    li:hover{
+        cursor: pointer;
+    }
+}
+
+.loading{
+    margin: 100px 0 0 0;
+    i{
+        color: gray;
+    }
+}
+
+.videoContainer {
+  background: #ddd;
+  height: 500px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.video-title{
+    margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 786px) {
+  .videoContainer {
+    height: 200px !important;
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  .video-title{
+    margin-bottom: 20px;
+   }
+}

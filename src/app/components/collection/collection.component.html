@@ -1,0 +1,30 @@
+<div class="row collection" *ngIf="collectionInfo">
+  <div class="col-xs-12 primary-image">
+    <img src="{{collectionInfo.primaryimageurl}}">
+  </div>
+
+  <div class="clearfix"></div>
+  <div class="col-xs-12 collection-data">
+    <h4 class="text-center provenance">
+      {{collectionInfo.provenance}}
+    </h4>
+
+    <div class="collection-info col-md-6">
+      <p> Dated &nbsp; : &nbsp; <strong> {{collectionInfo.dated}} </strong> </p>
+      <p> Department &nbsp; : &nbsp; <strong> {{collectionInfo.department}} </strong> </p>
+      <p> Division &nbsp; : &nbsp; <strong> {{collectionInfo.division}} </strong> </p>
+      <p> Accession Year &nbsp; : &nbsp; <strong> {{collectionInfo.accessionyear}} </strong> </p>
+      <p> Accession Method &nbsp; : &nbsp; <strong> {{collectionInfo.accessionmethod}} </strong> </p>
+
+    </div>
+
+    <div class="collection-info col-md-6">
+      <p> Medium &nbsp; : &nbsp; <strong> {{collectionInfo.medium}} </strong> </p>
+      <p> Period &nbsp; : &nbsp; <strong> {{collectionInfo.period}} </strong> </p>
+      <p> Century &nbsp; : &nbsp; <strong> {{collectionInfo.century}} </strong> </p>
+      <p> Contact &nbsp; : &nbsp; <strong> {{collectionInfo.contact}} </strong> </p>
+      <p> Creditline &nbsp; : &nbsp; <strong> {{collectionInfo.creditline}} </strong> </p>
+
+    </div>
+  </div>
+</div>

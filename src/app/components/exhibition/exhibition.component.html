@@ -1,0 +1,26 @@
+<div class="row" *ngIf="exhibition">
+
+  <img src="{{exhibition.primaryimageurl}}" style="height: 100%; width: 100%; object-fit: contain">
+
+
+  <h3 class="title"> {{exhibition?.title}} </h3>
+
+  <div class="exhibition-desc">
+    <p class="text-justify"> {{exhibition.textiledescription}} </p>
+  </div>
+
+  <div class="exhibition-venue col-md-6">
+    <h4> Venue </h4>
+    <p> {{exhibition.venues[0].fullname}} </p>
+    <p> {{exhibition.venues[0].address1}} {{exhibition.venues[0].address2}} </p>
+    <p> {{exhibition.venues[0].city}} </p>
+    <p> {{exhibition.venues[0].state}} - {{exhibition.venues[0].zipcode}} </p>
+  </div>
+
+
+  <div class="exhibition-details col-md-6">
+    <p> <strong> Exhibition Start Date </strong> - {{exhibition.begindate}} </p>
+    <p> <strong> Exhibition End Date </strong> - {{exhibition.enddate}} </p>
+    <p> <strong> Exhibition ID </strong> - {{exhibition.exhibitionid}} </p>
+  </div>
+</div>

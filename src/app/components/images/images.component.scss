@@ -1,0 +1,54 @@
+$assetPath : "../../../assets/images";
+
+.images-splash{
+    background: url(#{$assetPath}/gerome-viavant-217865.jpg) no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+}
+
+
+.image{
+    margin : 15px 0;
+    // display: inline-block;
+}
+
+.image:hover{
+    cursor: pointer;
+}
+
+.pagination{
+    margin : 50px 0;
+
+    li{
+        a{  
+            min-width: 50px;
+            text-align: center;
+            border-radius: 0;
+            color : gray;
+            font-size: 1.1em;
+            border-color: gray;
+            background: white;
+            margin-right: 5px;
+        }
+    }
+
+    li:hover{
+        cursor: pointer;
+    }
+}
+
+.loading{
+    margin: 100px 0 0 0;
+    i{
+        color: gray;
+    }
+}
+
+
+@media only screen and (max-width: 786px) {
+    .images-splash{
+        background: url(#{$assetPath}/gerome-viavant-217865.jpg) no-repeat center;
+    }
+}
+

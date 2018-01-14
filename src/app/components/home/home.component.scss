@@ -1,0 +1,16 @@
+$assetPath : "../../../assets/images";
+
+.home-img{
+    // background: url('assets/images/shop.jpg') no-repeat;
+    background: url(#{$assetPath}/art-school-of-athens-raphael-italian-painter-fresco-159862.jpg) no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    margin-bottom : 50px;
+}
+
+
+.about{
+    line-height: 1.5em;
+    margin: 100px 0;
+}

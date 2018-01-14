@@ -1,0 +1,12 @@
+$assetPath : "../../../assets/images";
+
+.image{
+    margin: 15px 0;
+}
+
+.collections-img{
+    background: url(#{$assetPath}/igor-miske-177849.jpg) no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}

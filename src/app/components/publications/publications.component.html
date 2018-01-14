@@ -1,0 +1,6 @@
+<div class="row"> 
+  <div class="col-md-3 publication" *ngFor="let publication of publications" (click)="goToPublication(publication)"> 
+    <img src="{{publication.primaryimageurl}}"> 
+    <h4> {{publication.title}} </h4>
+  </div>
+</div>
