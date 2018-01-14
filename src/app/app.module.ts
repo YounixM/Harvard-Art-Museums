@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { EmbedVideo } from 'ngx-embed-video';
@@ -31,14 +32,19 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { CreditsComponent } from './components/credits/credits.component';
 import { PublicationsComponent } from './components/publications/publications.component';
 import { PublicationComponent } from './components/publication/publication.component';
+import { LoginComponent } from './components/user-management/login/login.component';
+import { EmailComponent } from './components/user-management/email/email.component';
+import { SignupComponent } from './components/user-management/signup/signup.component';
+import { MembersComponent } from './components/user-management/members/members.component';
+import { UserDashboardComponent } from './components/user-management/user-dashboard/user-dashboard.component';
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyC69KhKmbPJOhAYWuvB0DBjSz_77Yetrcs",
-  authDomain: "harvardartmuseums-7ef16.firebaseapp.com",
-  databaseURL: "https://harvardartmuseums-7ef16.firebaseio.com",
-  projectId: "harvardartmuseums-7ef16",
-  storageBucket: "",
-  messagingSenderId: "640456681484"
+    apiKey: "AIzaSyC69KhKmbPJOhAYWuvB0DBjSz_77Yetrcs",
+    authDomain: "harvardartmuseums-7ef16.firebaseapp.com",
+    databaseURL: "https://harvardartmuseums-7ef16.firebaseio.com",
+    projectId: "harvardartmuseums-7ef16",
+    storageBucket: "harvardartmuseums-7ef16.appspot.com",
+    messagingSenderId: "640456681484"
 };
 
 
@@ -48,6 +54,7 @@ export const firebaseConfig = {
     HttpClientModule,
     AppRoutingModule,
     HttpModule,
+    FormsModule,
     EmbedVideo.forRoot(),
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
@@ -65,7 +72,12 @@ export const firebaseConfig = {
     ShopComponent,
     CreditsComponent,
     PublicationsComponent,
-    PublicationComponent
+    PublicationComponent,
+    LoginComponent,
+    EmailComponent,
+    SignupComponent,
+    MembersComponent,
+    UserDashboardComponent
   ],
   providers: [
     HarvardArtMuseumService,

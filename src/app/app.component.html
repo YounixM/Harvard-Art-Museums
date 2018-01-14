@@ -19,7 +19,12 @@
         <li><a routerLink="/collections"> Collections </a></li>
         <li><a routerLink="/videos">  Videos </a></li>
         <li><a routerLink="/shop"> Shop </a></li>
-        <li><a routerLink="/contact"> Contact Us </a></li>
+        <!--<li><a routerLink="/contact"> Contact Us </a></li>       -->
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+         <li *ngIf="!userLoggedIn"><a routerLink="/login"> Login </a></li>
+         <li *ngIf="userLoggedIn"><a (click)="logout()"> Logout </a></li>
       </ul>
     </div>
     <!--/.nav-collapse -->
@@ -33,6 +38,6 @@
   <div class="clearfix"></div>
 </div>
 
-<footer class="container text-center footer"> 
+<footer class="container text-center footer">
   &copy; All rights reserved, YounixLabs
 </footer>
