@@ -71,3 +71,10 @@ $assetPath : "../../../../assets/images";
 .sign-up-form{
     padding: 30px;
 }
+
+
+@media only screen and (max-width : 768px) {
+    .sign-up{
+        display: block;
+    }
+}

@@ -71,3 +71,10 @@ $assetPath : "../../../../assets/images";
 .email-form{
     padding: 30px;
 }
+
+
+@media only screen and (max-width : 768px) {
+    .email{
+        display: block;
+    }
+}
